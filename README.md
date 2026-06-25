@@ -55,12 +55,6 @@ cd youtube-live-lurker
 
 Then load the folder from `chrome://extensions` with **Load unpacked**.
 
-If `git` works in normal PowerShell but not in your editor terminal, restart the editor or temporarily add Git to that terminal:
-
-```powershell
-$env:Path = 'C:\Program Files\Git\cmd;' + $env:Path
-```
-
 ## Use the extension
 
 1. Paste a YouTube channel URL, handle URL, or channel URL into **Add channel**.
