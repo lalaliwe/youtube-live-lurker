@@ -7,7 +7,7 @@ YouTube Live Lurker is a Chrome extension made by and for VTuber fans. It watche
 
 The optional desktop dashboard adds a Holodex-style live/upcoming view for VTuber channels tracked by Holodex.
 
-This project is fan-made and is not affiliated with YouTube, Google, Holodex, or any VTuber agency.
+This project is a Fan-made Vtuber Tracker that isnt affliated with no one and built by one fan.
 
 ## What the extension does
 
