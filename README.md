@@ -16,7 +16,7 @@ This project is fan-made and is not affiliated with YouTube, Google, Holodex, or
 - Click any channel card in the popup to check it now and open/focus the stream if it is live.
 - Scheduled/upcoming YouTube waiting rooms are not treated as live unless YouTube reports playback-ready live data.
 
-Chrome must stay open. Sleep mode pauses checks. A 5-second check is fast, but not a hard real-time guarantee.
+Chrome must stay open. Sleep mode pauses checks.
 
 ## What uses API keys
 
