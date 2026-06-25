@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Live Lurker Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow"></p>
+          <h1>YouTube Live Lurker</h1>
+        </div>
+        <div class="header-actions">
+          <span id="bridge-status" class="status offline">Extension offline</span>
+          <button id="check-all" class="secondary">Check now</button>
+          <button id="refresh-upcoming">Refresh</button>
+        </div>
+      </header>
+
+      <p id="error" class="error" hidden></p>
+
+      <section class="stream-feed" aria-label="Watchlist streams">
+        <section id="live-section" class="feed-section" aria-labelledby="live-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">RIGHT NOW</p><h2 id="live-title">Live now</h2></div>
+            <span id="live-count" class="count">0</span>
+          </div>
+          <div id="live-streams" class="stream-list"></div>
+        </section>
+
+        <section id="upcoming-section" class="feed-section" aria-labelledby="upcoming-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">NEXT 30 DAYS</p><h2 id="upcoming-title">Upcoming</h2></div>
+            <span id="upcoming-count" class="count">0</span>
+          </div>
+          <div id="upcoming-streams" class="stream-list"></div>
+        </section>
+
+        <details id="no-schedule-section" class="no-schedule" open>
+          <summary><span>No Holodex schedule</span><span id="no-schedule-count" class="count">0</span></summary>
+          <p class="hint">Watchlist channels with no Holodex live/upcoming record. Extension monitoring still works.</p>
+          <div id="no-schedule-streams" class="no-schedule-list"></div>
+        </details>
+      </section>
+
+      <details class="settings">
+        <summary>Dashboard settings</summary>
+        <p>Holodex key stays in this app’s local user-data folder. It syncs locally to extension only for fallback live checks.</p>
+        <form id="settings-form">
+          <label for="holodex-key">Holodex API key</label>
+          <input id="holodex-key" type="password" autocomplete="off" placeholder="X-APIKEY value" />
+          <label for="channel-ids">Additional YouTube channel IDs</label>
+          <textarea id="channel-ids" rows="3" placeholder="One UC… channel ID per line. These sync into extension watchlist."></textarea>
+          <label class="checkbox-label" for="hide-member-streams"><input id="hide-member-streams" type="checkbox" /> Hide members-only streams</label>
+          <button type="submit">Save and refresh</button>
+        </form>
+        <div class="token-row">
+          <div><strong>Bridge token</strong><code id="bridge-token"></code></div>
+          <button id="copy-token" class="secondary">Copy token</button>
+        </div>
+      </details>
+
+      <footer>Data provided by <a href="https://holodex.net/" id="holodex-link">Holodex</a></footer>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

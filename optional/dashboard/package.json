@@ -1,0 +1,59 @@
+{
+  "name": "youtube-live-lurker-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional Holodex dashboard and local bridge for YouTube Live Lurker.",
+  "main": "main.js",
+  "author": "YouTube Live Lurker contributors",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "fan.youtube-live-lurker.dashboard",
+    "productName": "YouTube Live Lurker Dashboard",
+    "copyright": "Copyright (c) 2026 YouTube Live Lurker contributors",
+    "asar": true,
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "NOTICE.md",
+      "package.json"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "YouTube Live Lurker Dashboard",
+      "artifactName": "${productName} Setup ${version}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "^42.5.0",
+    "electron-builder": "^26.15.3"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Live Lurker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>YouTube Live Lurker</h1>
+          <p class="eyebrow">For your lurking needs</p>
+        </div>
+        <button id="check-all" class="icon-button" title="Check now" aria-label="Check now">↻</button>
+      </header>
+
+      <section class="notice">
+        <strong>#1 checks every 5 seconds.</strong>
+        Everyone else checks every 30 seconds.
+      </section>
+
+      <section class="add-channel" aria-labelledby="add-heading">
+        <h2 id="add-heading">Add channel</h2>
+        <form id="add-form">
+          <label class="sr-only" for="channel-url">YouTube channel URL</label>
+          <input
+            id="channel-url"
+            type="url"
+            placeholder="https://www.youtube.com/@channel"
+            required
+          />
+          <button type="submit" id="add-button">Add</button>
+        </form>
+        <p id="add-message" class="message" role="status"></p>
+      </section>
+
+      <section aria-labelledby="watchlist-heading">
+        <div class="section-title">
+          <h2 id="watchlist-heading">Priority watchlist</h2>
+          <span id="channel-count" class="count">0</span>
+        </div>
+        <ol id="channel-list" class="channel-list"></ol>
+        <p id="empty-state" class="empty-state">Add channels. First channel auto-opens when live.</p>
+      </section>
+
+      <details class="settings">
+        <summary>API and dashboard settings <span>optional</span></summary>
+        <p>Metadata key: Not Needed, mainly for grabbing Icons and Usernames when ratelimited.</p>
+        <form id="settings-form">
+          <label class="sr-only" for="api-key">YouTube Data API key</label>
+          <input id="api-key" type="password" placeholder="YouTube Data API key" autocomplete="off" />
+          <label class="sr-only" for="dashboard-token">Dashboard bridge token</label>
+          <input id="dashboard-token" type="password" placeholder="Desktop dashboard bridge token" autocomplete="off" />
+          <button type="submit">Save settings</button>
+        </form>
+        <p>Desktop dashboard shows its bridge token. Paste it here to connect locally.</p>
+        <p>Holodex fallback key syncs from connected dashboard. It only covers Holodex-tracked channels. AKA most if not all vtubers</p>
+        <p id="settings-message" class="message" role="status"></p>
+      </details>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
