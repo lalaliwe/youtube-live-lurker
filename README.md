@@ -38,7 +38,7 @@ API keys are stored locally:
 ### Easy release route
 
 1. Open the project’s **GitHub Releases** page.
-2. Download the extension source ZIP or release ZIP.
+2. Download the Source Zip (Code then download as zip ).
 3. Extract it somewhere permanent, such as `Documents\YouTube Live Lurker`.
 4. Open `chrome://extensions`.
 5. Turn on **Developer mode**.
