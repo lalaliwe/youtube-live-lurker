@@ -118,13 +118,6 @@ The installer is written to `optional/dashboard/dist/`.
 
 The installer uses the same project icon as the Chromium extension. The Windows installer icon lives at `optional/dashboard/build/icon.ico`, generated from the PNG files in `icons/`.
 
-Before making a GitHub Release:
-
-- Do not commit or upload API keys.
-- Do not copy Electron user data into the repository.
-- Use the generated installer from `optional/dashboard/dist/`.
-- Upload the installer artifact to GitHub Releases for non-technical users.
-
 ## Holodex usage and terms
 
 Holodex is used only for the optional VTuber dashboard metadata and for a fallback live lookup when YouTube’s public page fetch fails.
