@@ -122,7 +122,7 @@ npm run dist
 
 The installer is written to `optional/dashboard/dist/`.
 
-The installer uses the same project icon as the Chrome extension. The Windows installer icon lives at `optional/dashboard/build/icon.ico`, generated from the PNG files in `icons/`.
+The installer uses the same project icon as the Chromium extension. The Windows installer icon lives at `optional/dashboard/build/icon.ico`, generated from the PNG files in `icons/`.
 
 Before making a GitHub Release:
 
