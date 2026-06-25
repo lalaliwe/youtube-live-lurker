@@ -49,7 +49,7 @@ API keys are stored locally:
 ### CLI route
 
 ```powershell
-git clone https://github.com/<your-user>/youtube-live-lurker.git
+git clone https://github.com/lalaliwe/youtube-live-lurker.git
 cd youtube-live-lurker
 ```
 
