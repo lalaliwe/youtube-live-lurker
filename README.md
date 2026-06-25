@@ -3,7 +3,7 @@
   <img width="256" height="256" alt="icon-256" src="https://github.com/user-attachments/assets/17ea383e-a676-464f-b083-f7a2192ad6f7" />
 
 
-YouTube Live Lurker is a Chrome extension made by and for VTuber fans. It watches the YouTube channels you choose, opens your top-priority stream when it goes live, and can notify you for the rest.
+YouTube Live Lurker is a Chromium extension made by and for VTuber fans. It watches the YouTube channels you choose, opens your top-priority stream when it goes live, and can notify you for the rest.
 
 The optional desktop dashboard adds a Holodex-style live/upcoming view for VTuber channels tracked by Holodex.
 
@@ -16,7 +16,7 @@ This project is a Fan-made Vtuber Tracker that isnt affliated with no one and bu
 - Click any channel card in the popup to check it now and open/focus the stream if it is live.
 - Scheduled/upcoming YouTube waiting rooms are not treated as live unless YouTube reports playback-ready live data.
 
-Chrome must stay open. Sleep mode pauses checks.
+The Chromium Browser must stay open. Sleep mode pauses checks.
 
 ## What uses API keys
 
@@ -29,7 +29,7 @@ Chrome must stay open. Sleep mode pauses checks.
 
 API keys are stored locally:
 
-- Extension settings live in Chrome extension local storage.
+- Extension settings live in The Chromium Brower's extension local storage.
 - Dashboard settings live in Electron user data, outside this repository.
 - The packaged installer does not include your API keys or bridge token.
 
@@ -66,7 +66,7 @@ $env:Path = 'C:\Program Files\Git\cmd;' + $env:Path
 1. Paste a YouTube channel URL, handle URL, or channel URL into **Add channel**.
 2. Use the arrows to sort the watchlist.
 3. Put your must-open channel at `#1`.
-4. Keep Chrome open.
+4. Keep The Browser open.
 
 `#1` always has auto-open priority. Channels below it use notifications and can also be opened from the popup.
 
