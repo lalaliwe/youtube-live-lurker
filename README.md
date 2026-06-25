@@ -1,5 +1,8 @@
 # YouTube Live Lurker
 
+<img width="256" height="256" alt="icon-256" src="https://github.com/user-attachments/assets/17ea383e-a676-464f-b083-f7a2192ad6f7" />
+
+
 YouTube Live Lurker is a Chrome extension made by and for VTuber fans. It watches the YouTube channels you choose, opens your top-priority stream when it goes live, and can notify you for the rest.
 
 The optional desktop dashboard adds a Holodex-style live/upcoming view for VTuber channels tracked by Holodex.
