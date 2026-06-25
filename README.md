@@ -100,12 +100,6 @@ npm install
 npm start
 ```
 
-If `npm` works in normal PowerShell but not in your editor terminal, restart the editor or temporarily add Node:
-
-```powershell
-$env:Path = 'C:\Program Files\nodejs;' + $env:Path
-```
-
 ### Build the dashboard installer
 
 ```powershell
@@ -139,7 +133,7 @@ See [NOTICE.md](NOTICE.md) and [optional/dashboard/NOTICE.md](optional/dashboard
 
 YouTube’s `/live` page is a public web route, not an official live-status API. YouTube may change, throttle, or block it. On repeated check errors, the extension backs off to avoid hammering requests.
 
-Holodex coverage is strongest for VTuber channels tracked by Holodex. Non-Holodex channels can still be watched by the extension, but may not show upcoming schedule cards in the dashboard.
+Holodex coverage is strongest for VTuber channels. Non-Holodex channels can still be watched by the extension, but may not show upcoming schedule cards in the dashboard.
 
 ## License
 
