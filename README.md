@@ -35,7 +35,7 @@ API keys are stored locally:
 
 ## Install the main extension
 
-### Easy release route
+### Easy release\code route
 
 1. Open the project’s **GitHub Releases** page.
 2. Download the Source Zip (Code then download as zip ).
