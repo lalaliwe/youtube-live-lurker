@@ -66,7 +66,7 @@ Then load the folder from `chrome://extensions` with **Load unpacked**.
 
 ## Optional desktop dashboard
 
-The dashboard is optional. The extension works without it.
+The dashboard is optional. The extension works fine without it.
 
 The dashboard:
 
