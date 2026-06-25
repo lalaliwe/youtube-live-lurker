@@ -1,5 +1,5 @@
 # YouTube Live Lurker
-
+<p align="center"
   <img width="256" height="256" alt="icon-256" src="https://github.com/user-attachments/assets/17ea383e-a676-464f-b083-f7a2192ad6f7" />
 
 
